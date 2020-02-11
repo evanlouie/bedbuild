@@ -1,0 +1,34 @@
+{
+  "name": "bedbuild",
+  "version": "0.0.1",
+  "description": "TypeScript conversion of Bedrocks build.sh script",
+  "main": "index.js",
+  "repository": "https://github.com/evanlouie/bedbuild.git",
+  "author": "Evan Louie <evan.louie@microsoft.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "shx rm -rf dist && webpack && shx chmod +x dist/bedbuild.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@types/fs-extra": "^8.0.1",
+    "@types/node": "^13.7.0",
+    "@types/request": "^2.48.4",
+    "@types/shelljs": "^0.8.6",
+    "@types/yargs": "^15.0.3",
+    "babel-loader": "^8.0.6",
+    "shx": "^0.3.2",
+    "typescript": "^3.7.5",
+    "webpack": "^5.0.0-beta.13",
+    "webpack-cli": "^4.0.0-beta.2"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.8.3",
+    "axios": "^0.19.2",
+    "fs-extra": "^8.1.0",
+    "request": "^2.88.0",
+    "shelljs": "^0.8.3",
+    "yargs": "^15.1.0"
+  }
+}
